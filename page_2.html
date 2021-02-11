@@ -1,0 +1,83 @@
+<link href="https://cdn.jsdelivr.net/gh/gpeditowo/blog@1.0/font.css" rel="stylesheet">  
+<link href="https://cdn.jsdelivr.net/npm/nes.css@2.3.0/css/nes.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/gh/gpeditowo/blog@2.01/mouse.css" rel="stylesheet">
+<!-- 网站头部 -->
+<header class="sticky"><div class="container"><div class="nav-brand"><h1>GPEDIT BOLG</h1> </div> <div class="social-buttons"><div><a href="index.html" class="nes-badge"><span class="is-primary">网站首页</span></a> </div></div></div></header> 
+</br></br></br>
+
+
+<!-- 文章内容 -->
+<div class="nes-container is-rounded">
+  <p>
+<!-- 文章标题 -->
+<h1> 新年快乐 </h1>
+<!-- 文章内容 -->
+<h3>
+希望各位家庭和睦，身体健康，希望今年服务器里面可以多些人肝🎇
+</h3>
+</p>
+
+
+<!-- 网站声明 -->
+
+<div class="nes-container with-title is-centered">
+  <p class="title">声明</p>
+  <p>本网站是遵守<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC BY-NC-SA 4.0</a>的非商业性网站
+  </br>CSS框架:<a href="https://github.com/nostalgic-css/NES.css">NES.CSS</a>
+  </br>字体:<a href="https://github.com/SolidZORO/zpix-pixel-font">zpix</a>
+  </br>CDN:<a href="https://www.jsdelivr.com/">jsdelivr</a>
+  </p>
+  </div>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <style>
+    .back-to-top {
+      display: none;
+          /* 默认隐藏 */
+      position: fixed;
+      /* 固定位置 */
+      bottom: 20px;
+      /* 页面底部 */
+      right: 30px;
+      /* 页面右边 */
+      z-index: 99;
+    }
+    }
+  </style>
+</head>
+<body>
+<div class="js-back-to-top back-to-top">
+<button type="button" class="nes-btn is-error">∧</button>
+</div>
+
+  <script src="https://cdn.staticfile.org/jquery/2.2.4/jquery.min.js"></script>
+  <script>
+    $(function() {
+      var $win = $(window);
+      var $backToTop = $('.js-back-to-top');
+      // 滚动展示
+      $win.scroll(function() {
+        if ($win.scrollTop() > 100) {
+          $backToTop.show();
+        } else {
+          $backToTop.hide();
+        }
+      });
+      // 点击返回
+      $backToTop.click(function() {
+        $('html, body').animate({
+          scrollTop: 0
+        }, 200);
+      });
+    });
+  </script>
+</body>
+</html>
+
+
+
+
+
